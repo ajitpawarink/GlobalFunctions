@@ -1,3 +1,5 @@
+<?php
+
 /**
  * Encrypts Decrypts file
  * @param string $mode The mode to encrypt or decrypt.
@@ -91,3 +93,18 @@ function base64url_decode( $data, $strict = false ) {
     // Decode Base64 string and return the original data
     return base64_decode($b64, $strict);
 }
+
+//simple function to display data
+function dig( $var ){
+    echo '<pre>';
+    print_r( $var );
+    echo '</pre>';
+}
+
+function out( $var = 'Test' ){
+    dig( $var );
+    die;
+}
+
+
+?>
